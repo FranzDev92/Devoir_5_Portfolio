@@ -1,0 +1,33 @@
+.hero {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  button.btn:hover {
+    filter: brightness(90%);
+    transition: all 0.3s ease;
+  }
+  .service-card {
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    background-color: #efefef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  .portfolio-card {
+    transition: all 0.3s ease;
+  }
+  
+  .portfolio-card:hover {
+    background-color: #efefef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .portfolio-card .btn {
+    transition: background-color 0.3s ease;
+  }
+  
+  .portfolio-card .btn:hover {
+    background-color: #0b5ed7; /* bleu Bootstrap un peu plus clair */
+  }
+   
