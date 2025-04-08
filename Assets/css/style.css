@@ -49,4 +49,23 @@
   .social-icon:hover {
     filter: brightness(1.2) invert(1);
   }
+  @media (max-width: 767px) {
+    .card {
+      padding: 1rem;
+    }
+  }
+  
+  .service-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  iframe {
+    min-height: 250px;
+  }
   
