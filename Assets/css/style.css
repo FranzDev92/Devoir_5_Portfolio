@@ -30,4 +30,23 @@
   .portfolio-card .btn:hover {
     background-color: #0b5ed7; /* bleu Bootstrap un peu plus clair */
   }
-   
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .footer-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .social-icon {
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    filter: brightness(1.2) invert(1);
+  }
+  
