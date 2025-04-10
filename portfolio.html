@@ -1,71 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio – François Divet</title>
-
-  <!-- Google Fonts -->
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <!-- CSS perso -->
-  <link rel="stylesheet" href="Assets/css/style.css"/>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/css/style.css">
   <style>
     body {
       font-family: 'Nunito Sans', sans-serif;
     }
-
     .portfolio-card {
       transition: all 0.3s ease;
     }
-
     .portfolio-card:hover {
       background-color: #efefef;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
-
     .portfolio-card .btn {
       transition: background-color 0.3s ease;
     }
-
     .portfolio-card .btn:hover {
-      background-color: #0b5ed7;
+      background-color: #0b5dd7;
     }
   </style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand text-uppercase" href="index.html">François Divet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav text-uppercase">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="mentions-legales.html">Mentions légales</a></li>
-        </ul>
+  <!--HEADER-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="index.html">John Doe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-uppercase">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <!-- Section Portfolio -->
+    </nav>
+  </header>
+  <!--PORTFOLIO-->
   <section class="py-5 bg-light">
     <div class="container">
       <h1 class="text-center mb-3 fw-bold">Portfolio</h1>
       <p class="text-center mb-5">Voici quelques-unes de mes réalisations.</p>
-
       <div class="row">
-        <!-- Projet 1 -->
+        <!--FRESH FOOD-->
         <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card portfolio-card h-100">
             <img src="Assets/images/fresh-food.jpg" class="card-img-top" alt="Projet Fresh Food">
@@ -77,8 +65,7 @@
             </div>
           </div>
         </div>
-
-        <!-- Projet 2 -->
+        <!--RESTAURANT JAPONAIS-->
         <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card portfolio-card h-100">
             <img src="Assets/images/restaurant-japonais.jpg" class="card-img-top" alt="Projet Akira">
@@ -90,8 +77,7 @@
             </div>
           </div>
         </div>
-
-        <!-- Projet 3 -->
+        <!--ESPACE BIEN ÊTRE-->
         <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card portfolio-card h-100">
             <img src="Assets/images/espace-bien-etre.jpg" class="card-img-top" alt="Espace bien-être">
@@ -103,8 +89,7 @@
             </div>
           </div>
         </div>
-
-        <!-- Projet 4 -->
+        <!--SEO-->
         <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card portfolio-card h-100">
             <img src="Assets/images/seo.jpg" class="card-img-top" alt="SEO">
@@ -116,8 +101,7 @@
             </div>
           </div>
         </div>
-
-        <!-- Projet 5 -->
+        <!--API-->
         <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card portfolio-card h-100">
             <img src="Assets/images/coder.jpg" class="card-img-top" alt="API REST">
@@ -129,8 +113,7 @@
             </div>
           </div>
         </div>
-
-        <!-- Projet 6 -->
+        <!--MAQUETTE-->
         <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card portfolio-card h-100">
             <img src="Assets/images/screens.jpg" class="card-img-top" alt="Maquette de site">
@@ -142,20 +125,18 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
+  <!--FOOTER-->
   <footer class="bg-dark text-white py-5 mt-5">
     <div class="container">
       <div class="row">
-        <!-- Colonne 1 : Coordonnées -->
+        <!--COORDONNÉES-->
         <div class="col-md-4 mb-4">
-          <h5 class="text-uppercase fw-bold">François Divet</h5>
-          <p>123 rue des développeurs<br>75000 Paris</p>
-          <p>contact@johndoe.com<br>06 12 34 56 78</p>
+          <h5 class="text-uppercase fw-bold">John Doe</h5>
+          <p>40 rue laure Diebold<br>69009 Lyon, france</p>
+          <p>10 20 30 40 50<br>john.doe@gmail.com</p>
           <div class="d-flex gap-3 mt-3">
             <a href="https://github.com/FranzDev92" target="_blank" rel="noopener nofollow">
               <img src="Assets/images/github.svg" alt="GitHub" width="24" class="social-icon">
@@ -168,8 +149,7 @@
             </a>
           </div>
         </div>
-  
-        <!-- Colonne 2 : Navigation -->
+        <!--PAGES-->
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase fw-bold">Navigation</h5>
           <ul class="list-unstyled">
@@ -180,14 +160,16 @@
             <li><a href="mentions-legales.html" class="footer-link">Mentions légales</a></li>
           </ul>
         </div>
-  
-        <!-- Colonne 3 : Réalisations -->
+        <!--RÉALISATION-->
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase fw-bold">Réalisations</h5>
           <ul class="list-unstyled">
             <li><a href="portfolio.html" class="footer-link">Fresh Food</a></li>
             <li><a href="portfolio.html" class="footer-link">Restaurant Akira</a></li>
-            <li><a href="portfolio.html" class="footer-link">API REST</a></li>
+            <li><a href="portfolio.html" class="footer-link">Espace bien-être</a></li>
+            <li><a href="portfolio.html" class="footer-link">SEO</a></li>
+            <li><a href="portfolio.html" class="footer-link">Création d'une API</a></li>
+            <li><a href="portfolio.html" class="footer-link">Maquette d'un site</a></li>
           </ul>
         </div>
       </div>
@@ -196,8 +178,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

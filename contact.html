@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact – François Divet</title>
-
-  <!-- Google Fonts -->
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <!-- CSS perso -->
-  <link rel="stylesheet" href="Assets/css/style.css"/>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <style>
     body {
       font-family: 'Nunito Sans', sans-serif;
     }
-
     form .form-control:focus {
       box-shadow: none;
       border-color: #0d6efd;
     }
-
     iframe {
       width: 100%;
       border: 0;
@@ -32,89 +24,79 @@
   </style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand text-uppercase" href="index.html">François Divet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav text-uppercase">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="mentions-legales.html">Mentions légales</a></li>
-        </ul>
+  <!--HEADER-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="index.html">John Doe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-uppercase">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <!-- Section Contact -->
+    </nav>
+  </header>
   <section class="py-5">
     <div class="container">
       <h1 class="text-center mb-4 fw-bold">Contactez-moi</h1>
-
       <div class="row">
-        <!-- Formulaire -->
         <div class="col-md-6 mb-4">
           <form>
             <div class="mb-3">
-              <label for="nom" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="nom" required>
+              <label for="nom" class="form-label"></label>
+              <input type="text" class="form-control" id="nom" required placeholder="Votre nom">
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
+              <label for="email" class="form-label"></label>
+              <input type="email" class="form-control" id="email" required placeholder="Votre adresse email">
             </div>
             <div class="mb-3">
-              <label for="tel" class="form-label">Téléphone</label>
-              <input type="tel" class="form-control" id="tel" required>
+              <label for="tel" class="form-label"></label>
+              <input type="tel" class="form-control" id="tel" required placeholder="Votre numéro de téléphone">
             </div>
             <div class="mb-3">
-              <label for="sujet" class="form-label">Sujet</label>
-              <input type="text" class="form-control" id="sujet" required>
+              <label for="sujet" class="form-label"></label>
+              <input type="text" class="form-control" id="sujet" required placeholder="Sujet">
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="5" required></textarea>
+              <label for="message" class="form-label"></label>
+              <textarea class="form-control" id="message" rows="5" required placeholder="Votre message"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+              </div>              
           </form>
         </div>
-
-        <!-- Coordonnées + Map -->
         <div class="col-md-6">
           <h4 class="fw-bold">Mes coordonnées</h4>
-          <p>John Doe<br>
-          123 rue des développeurs<br>
-          75000 Paris<br>
-          contact@johndoe.com<br>
-          06 12 34 56 78</p>
-
+          <p>
+            <i class="bi bi-person-fill"></i> John Doe<br>
+            <i class="bi bi-geo-alt-fill"></i> 40 rue Laure Diebold<br>
+            69009 Lyon, France<br>
+            <i class="bi bi-telephone-fill"></i> 10 20 30 40 50<br>
+            <i class="bi bi-envelope-fill"></i> john.doe@gmail.com
+          </p>
           <h4 class="fw-bold mt-4">Localisation</h4>
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999203710977!2d2.292292615674321!3d48.85884407928754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fcd399e3c17%3A0x40b82c3688c9460!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1672828880013"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+          <iframe src="https://www.google.com/maps?q=40+rue+Laure+Diebold,+69009+Lyon,+France&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
   <footer class="bg-dark text-white py-5 mt-5">
     <div class="container">
       <div class="row">
-        <!-- Colonne 1 : Coordonnées -->
         <div class="col-md-4 mb-4">
-          <h5 class="text-uppercase fw-bold">François Divet</h5>
-          <p>123 rue des développeurs<br>75000 Paris</p>
-          <p>contact@johndoe.com<br>06 12 34 56 78</p>
+          <h5 class="text-uppercase fw-bold">John Doe</h5>
+          <p>40 rue laure Diebold<br>69009 Lyon, France</p>
+          <p>10 20 30 40 50<br>john.doe@gmail.com</p>
           <div class="d-flex gap-3 mt-3">
             <a href="https://github.com/FranzDev92" target="_blank" rel="noopener nofollow">
               <img src="Assets/images/github.svg" alt="GitHub" width="24" class="social-icon">
@@ -126,9 +108,7 @@
               <img src="Assets/images/linkedin.svg" alt="LinkedIn" width="24" class="social-icon">
             </a>
           </div>
-        </div>
-  
-        <!-- Colonne 2 : Navigation -->
+        </div> 
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase fw-bold">Navigation</h5>
           <ul class="list-unstyled">
@@ -139,8 +119,6 @@
             <li><a href="mentions-legales.html" class="footer-link">Mentions légales</a></li>
           </ul>
         </div>
-  
-        <!-- Colonne 3 : Réalisations -->
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase fw-bold">Réalisations</h5>
           <ul class="list-unstyled">
@@ -155,8 +133,7 @@
       </div>
     </div>
   </footer>
-
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
